@@ -4,14 +4,14 @@
     "C:\\Users\\Tommie\\source\\repos\\Partytime.Joined\\src\\Partytime.Joined.Service\\Partytime.Joined.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tommie\\source\\repos\\Partytime.Joined\\src\\Partytime.Joined.Service\\Partytime.Joined.Service.csproj": {
+    "C:\\Users\\Tommie\\source\\repos\\Partytime.Joined\\src\\Partytime.Joined.Contracts\\Partytime.Joined.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tommie\\source\\repos\\Partytime.Joined\\src\\Partytime.Joined.Service\\Partytime.Joined.Service.csproj",
-        "projectName": "Partytime.Joined.Service",
-        "projectPath": "C:\\Users\\Tommie\\source\\repos\\Partytime.Joined\\src\\Partytime.Joined.Service\\Partytime.Joined.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Tommie\\source\\repos\\Partytime.Joined\\src\\Partytime.Joined.Contracts\\Partytime.Joined.Contracts.csproj",
+        "projectName": "Partytime.Joined.Contracts",
+        "projectPath": "C:\\Users\\Tommie\\source\\repos\\Partytime.Joined\\src\\Partytime.Joined.Contracts\\Partytime.Joined.Contracts.csproj",
         "packagesPath": "C:\\Users\\Tommie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tommie\\source\\repos\\Partytime.Joined\\src\\Partytime.Joined.Service\\obj\\",
+        "outputPath": "C:\\Users\\Tommie\\source\\repos\\Partytime.Joined\\src\\Partytime.Joined.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tommie\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,10 +40,74 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Tommie\\source\\repos\\Partytime.Joined\\src\\Partytime.Joined.Service\\Partytime.Joined.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Tommie\\source\\repos\\Partytime.Joined\\src\\Partytime.Joined.Service\\Partytime.Joined.Service.csproj",
+        "projectName": "Partytime.Joined.Service",
+        "projectPath": "C:\\Users\\Tommie\\source\\repos\\Partytime.Joined\\src\\Partytime.Joined.Service\\Partytime.Joined.Service.csproj",
+        "packagesPath": "C:\\Users\\Tommie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tommie\\source\\repos\\Partytime.Joined\\src\\Partytime.Joined.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Tommie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Tommie\\source\\repos\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Tommie\\source\\repos\\Partytime.Joined\\src\\Partytime.Joined.Contracts\\Partytime.Joined.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Tommie\\source\\repos\\Partytime.Joined\\src\\Partytime.Joined.Contracts\\Partytime.Joined.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.4, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.17.2, )"
             },
             "Partytime.Common": {
               "target": "Package",

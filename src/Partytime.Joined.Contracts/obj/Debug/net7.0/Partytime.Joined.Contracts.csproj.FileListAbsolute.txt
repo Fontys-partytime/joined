@@ -1,0 +1,12 @@
+C:\Users\Tommie\source\repos\Partytime.Joined\src\Partytime.Joined.Contracts\bin\Debug\net7.0\Partytime.Joined.Contracts.deps.json
+C:\Users\Tommie\source\repos\Partytime.Joined\src\Partytime.Joined.Contracts\bin\Debug\net7.0\Partytime.Joined.Contracts.dll
+C:\Users\Tommie\source\repos\Partytime.Joined\src\Partytime.Joined.Contracts\bin\Debug\net7.0\Partytime.Joined.Contracts.pdb
+C:\Users\Tommie\source\repos\Partytime.Joined\src\Partytime.Joined.Contracts\obj\Debug\net7.0\Partytime.Joined.Contracts.csproj.AssemblyReference.cache
+C:\Users\Tommie\source\repos\Partytime.Joined\src\Partytime.Joined.Contracts\obj\Debug\net7.0\Partytime.Joined.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tommie\source\repos\Partytime.Joined\src\Partytime.Joined.Contracts\obj\Debug\net7.0\Partytime.Joined.Contracts.AssemblyInfoInputs.cache
+C:\Users\Tommie\source\repos\Partytime.Joined\src\Partytime.Joined.Contracts\obj\Debug\net7.0\Partytime.Joined.Contracts.AssemblyInfo.cs
+C:\Users\Tommie\source\repos\Partytime.Joined\src\Partytime.Joined.Contracts\obj\Debug\net7.0\Partytime.Joined.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Tommie\source\repos\Partytime.Joined\src\Partytime.Joined.Contracts\obj\Debug\net7.0\Partytime.Joined.Contracts.dll
+C:\Users\Tommie\source\repos\Partytime.Joined\src\Partytime.Joined.Contracts\obj\Debug\net7.0\refint\Partytime.Joined.Contracts.dll
+C:\Users\Tommie\source\repos\Partytime.Joined\src\Partytime.Joined.Contracts\obj\Debug\net7.0\Partytime.Joined.Contracts.pdb
+C:\Users\Tommie\source\repos\Partytime.Joined\src\Partytime.Joined.Contracts\obj\Debug\net7.0\ref\Partytime.Joined.Contracts.dll

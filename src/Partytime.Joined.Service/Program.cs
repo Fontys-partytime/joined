@@ -1,6 +1,15 @@
+using Partytime.Common.MassTransit;
+using Partytime.Common.Settings;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+// Get service settings
+var serviceSettings = builder.Configuration.GetSection(nameof(ServiceSettings)).Get<ServiceSettings>();
+
+// Use the common code and initialize what was here before
+builder.Services.AddMassTransitWithRabbitMq();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
