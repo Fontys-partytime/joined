@@ -6,6 +6,9 @@ using Partytime.Joined.Service.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Docker Rabbitmq/Masstransit communication
+bool IsRunningInContainer = bool.TryParse(Environment.GetEnvironmentVariable("DOTNET_RUNNING_IN_CONTAINER"), out var inContainer) && inContainer;
+
 // Add services to the container.
 
 // Get service settings

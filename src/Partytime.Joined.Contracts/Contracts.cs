@@ -1,10 +1,6 @@
 namespace Partytime.Joined.Contracts
 {
-    public record JoinedGetByPartyId(Guid partyId);
-    public record JoinedCreated(Guid partyId, Guid UserId, DateTimeOffset JoinedDate);
-    public record JoinedUpdated(Guid partyId, Guid UserId, DateTimeOffset AcceptedDate, bool Accepted);
-    public record JoinedDeleted(Guid partyId, Guid UserId);
-
-    // Hardcoded reply for demo purposes
-    public record CommandMessage(string MessageString);
+    public record JoinedCreated(Guid partyId, Guid UserId, string Username); // This happens when a joined request gets sent
+    public record JoinedUpdated(Guid partyId, Guid UserId, bool Accepted); // This happens after a joined request gets accepted
+    public record JoinedDeleted(Guid partyId, Guid UserId); // This happens after a joined gets declined
 }

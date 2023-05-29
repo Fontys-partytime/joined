@@ -20,6 +20,7 @@
       "outputPath": "C:\\Users\\Tommie\\source\\repos\\Partytime.Joined\\src\\Partytime.Joined.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
+        "C:\\Users\\Tommie\\source\\repos\\Partytime.Joined\\NuGet.Config",
         "C:\\Users\\Tommie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -27,9 +28,9 @@
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\Tommie\\source\\repos\\packages": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/I457616/partytime/_packaging/Partytime.Common/nuget/v3/index.json": {},
+        "https://pkgs.dev.azure.com/I457616/partytime/_packaging/Partytime.Joined.Contracts/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {

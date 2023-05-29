@@ -35,12 +35,13 @@ namespace Partytime.Joined.Service.Controllers
         {
             var joined = new Entities.Joined
             {
-                Partyid = createJoinDto.Partyid,
-                Userid = createJoinDto.Userid
+                Partyid = createJoinDto.partyid,
+                Userid = createJoinDto.userid,
+                Username = createJoinDto.username
             };
 
             // 1. Communicate with messaging container
-            await _publishEndpoint.Publish(new JoinedCreated(createJoinDto.Partyid, createJoinDto.Userid, createJoinDto.Username));
+            await _publishEndpoint.Publish(new JoinedCreated(createJoinDto.partyid, createJoinDto.userid, createJoinDto.username));
 
             Entities.Joined createdJoined = await _joinedRepository.CreateJoined(joined);
 
@@ -53,9 +54,9 @@ namespace Partytime.Joined.Service.Controllers
         {
             var joined = new Entities.Joined
             {
-                Partyid = updateJoinDto.Partyid,
-                Userid = updateJoinDto.Userid,
-                Accepted = updateJoinDto.Accepted
+                Partyid = updateJoinDto.partyid,
+                Userid = updateJoinDto.userid,
+                Accepted = updateJoinDto.accepted
             };
 
             var updatedJoined = await _joinedRepository.UpdateJoined(joined);
