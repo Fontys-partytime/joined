@@ -15,7 +15,6 @@ variables:
   containerRegistry: 'partytimecontainerregistry.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
-  buildContext: '$(Build.Repository.LocalPath)'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
