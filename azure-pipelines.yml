@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: '4d9f3008-99a7-428e-a8ed-be1ab790481a'
   imageRepository: 'joined'
   containerRegistry: 'partytimecontainerregistry.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/src/Dockerfile'
+  dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
