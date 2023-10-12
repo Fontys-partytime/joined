@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Partytime.Joined.Service", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Partytime.Joined.Contracts", "src\Partytime.Joined.Contracts\Partytime.Joined.Contracts.csproj", "{ACD14EF0-8847-4534-B0A5-0EF5C481130C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Partytime.Joined.Tests", "Partytime.Joined.Tests\Partytime.Joined.Tests.csproj", "{89415921-F936-4FD5-82A1-707C7FC6B506}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +23,15 @@ Global
 		{ACD14EF0-8847-4534-B0A5-0EF5C481130C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACD14EF0-8847-4534-B0A5-0EF5C481130C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACD14EF0-8847-4534-B0A5-0EF5C481130C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89415921-F936-4FD5-82A1-707C7FC6B506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89415921-F936-4FD5-82A1-707C7FC6B506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89415921-F936-4FD5-82A1-707C7FC6B506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89415921-F936-4FD5-82A1-707C7FC6B506}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF1CA4D3-F734-481C-909C-F2D7A39F2719}
 	EndGlobalSection
 EndGlobal

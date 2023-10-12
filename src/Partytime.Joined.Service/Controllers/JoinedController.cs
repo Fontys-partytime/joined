@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Partytime.Joined.Service.Dtos;
 using Partytime.Joined.Contracts;
 using Partytime.Joined.Service.Repositories;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Partytime.Joined.Service.Controllers
 {
@@ -19,7 +20,9 @@ namespace Partytime.Joined.Service.Controllers
             this._publishEndpoint = publishEndpoint;
         }
 
+
         [HttpGet("party/{id}")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetJoinedByPartyId(Guid id)
         {
             var joinedFound = await _joinedRepository.GetJoinedByPartyId(id);
@@ -31,6 +34,7 @@ namespace Partytime.Joined.Service.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<ActionResult<JoinedDto>> Post([FromBody] CreateJoinDto createJoinDto)
         {
             var joined = new Entities.Joined
@@ -50,6 +54,7 @@ namespace Partytime.Joined.Service.Controllers
         }
 
         [HttpPut]
+        [Authorize]
         public async Task<ActionResult<bool>> Put([FromBody] UpdateJoinDto updateJoinDto)
         {
             var joined = new Entities.Joined
@@ -68,6 +73,7 @@ namespace Partytime.Joined.Service.Controllers
         }
 
         [HttpDelete("{partyId}/{id}")]
+        [Authorize]
         public async Task<ActionResult<bool>> Delete(Guid partyId, Guid id)
         {
             bool joinedDeleted = await _joinedRepository.DeleteJoined(partyId, id);
